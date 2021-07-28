@@ -1,5 +1,5 @@
 import 'package:micro_core/micro_core.dart';
-import 'page/login_page.dart';
+import 'pages/login_page.dart';
 
 class MicroAppLoginResolver implements MicroApp {
   @override
