@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: CustomButtonWidget(
           text: 'goToHome',
-          onPressed: () => navigatorKey.currentState.pushNamed('/home'),
+          onPressed: () => navigatorKey.currentState?.pushNamed('/home'),
         ),
       ),
     );

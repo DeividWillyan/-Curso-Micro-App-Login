@@ -2,9 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:micro_app_login/app/controllers/login_controller.dart';
 
 void main() {
-  LoginController _controller;
-  String user;
-  String pass;
+  late LoginController _controller;
+  late String user;
+  late String pass;
 
   setUpAll(() {
     _controller = LoginController();
@@ -26,11 +26,11 @@ void main() {
     expect(result, false);
   });
 
-  test(
-      'Should LoginController return exception in login method with null values',
-      () async {
-    expect(_controller.login(user, null), throwsA(isA<Exception>()));
-    expect(_controller.login(null, pass), throwsA(isA<Exception>()));
-    expect(_controller.login(null, null), throwsA(isA<Exception>()));
-  });
+  // test(
+  //     'Should LoginController return exception in login method with null values',
+  //     () async {
+  //   expect(_controller.login(user, null), throwsA(isA<Exception>()));
+  //   expect(_controller.login(null, pass), throwsA(isA<Exception>()));
+  //   expect(_controller.login(null, null), throwsA(isA<Exception>()));
+  // });
 }
