@@ -29,6 +29,7 @@
 .pub-cache/
 .pub/
 build/
+.scannerwork/**
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -72,3 +73,5 @@ build/
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
+tests.output
+coverage/lcov.info
